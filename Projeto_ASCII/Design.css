@@ -1,0 +1,1100 @@
+/*Cor de fundo geral do site*/
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+/*designe geral do cabeçalho*/
+header {
+    background-color: #502654;
+    width: 101.2%;
+    height: fit-content;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*formato da caixa de pesquisa*/
+.caixa-pesquisa {
+    position: relative;
+    left: 20%;
+    display: flex;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.pesquisa {
+    position: relative;
+    left: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    width: 260px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+/*Organização dos botões para outras páginas*/
+nav {
+    display: flex;
+    position: relative;
+    left: 10%;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+}
+
+nav div div {
+    display: flex;
+    margin-left: 40px;
+}
+
+nav div a {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+nav div a:hover {
+    color: black;
+}
+
+/*Resposividade do cabeçalho*/
+@media (max-width: 1300px) {
+    .caixa-pesquisa {
+        left: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        left: 5%;
+    }
+
+    .caixa-pesquisa {
+        left: 10%;
+    }
+
+    @media (max-width: 1135px) {
+        .caixa-pesquisa {
+            width: 200px;
+        }
+
+        .pesquisa {
+            width: 160px;
+        }
+
+        nav {
+            left: 1%;
+        }
+    }
+
+    @media (max-width: 1060px) {
+        .caixa-pesquisa {
+            left: 0%;
+        }
+
+        nav {
+            left: -2%;
+        }
+    }
+}
+
+@media (max-width: 952px) {
+    header {
+        flex-wrap: wrap;
+        height: 160px;
+    }
+
+    nav div {
+        padding: 0px 0px 0px 10px;
+    }
+
+    .caixa-pesquisa {
+        margin-left: 30%;
+        width: 300px;
+        top: -10px;
+    }
+
+    .pesquisa {
+        width: 260px;
+    }
+
+    nav {
+        top: -8px;
+    }
+}
+
+@media(max-width: 813px) {
+    .hlogo {
+        position: relative;
+        left: 35%;
+    }
+
+    nav {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        left: 0%;
+        margin-left: 0px;
+    }
+
+
+}
+
+@media (max-width:604px) {
+    nav div div {
+        margin: 5px;
+    }
+
+    nav {
+        margin-left: 5%;
+    }
+
+    .caixa-pesquisa {
+        margin-left: 20%;
+    }
+}
+
+@media(max-width:515px) {
+    nav {
+        margin-left: 1%;
+    }
+}
+
+/*Configurações do banner*/
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner img {
+    width: 80%;
+}
+
+/*Início da área de produtos mais vendidos*/
+.textvend {
+    position: relative;
+    width: 95.2%;
+    left: -8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    background-color: rgb(216, 216, 216);
+    padding: 10px 0px;
+    padding-left: 6%;
+}
+
+.vendidos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Cards dos produtos mais vendidos*/
+.produtos1 {
+    position: relative;
+    left: 0px;
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 10px 30px 0px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produtos2 {
+    position: relative;
+    left: 0px;
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 30px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produtos3 {
+    position: relative;
+    left: 0px;
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 30px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produtos:hover {
+    opacity: 0.8;
+}
+
+/*Organização dos cards do produto*/
+.card {
+    text-decoration: none;
+    height: 540px;
+}
+
+.imgprod {
+    width: 300px;
+    border-radius: 13px;
+}
+
+.titulo {
+
+    position: relative;
+    top: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-top: 1px solid rgb(235, 235, 235);
+    padding: 15px 5px;
+    color: rgb(34, 34, 34);
+}
+
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(70, 70, 70);
+    position: relative;
+    top: -28px;
+    margin-left: 7px;
+}
+
+.preco {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: -25px;
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.detalhes {
+    position: relative;
+    left: 32%;
+    top: -11px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+a.detalhes:hover {
+    color: black;
+    font-size: 19.5px;
+}
+
+/*Botão de ver mais produtos vendidos*/
+.mais {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 2px gray;
+    border-radius: 13px;
+    color: rgb(27, 27, 27);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.mais:hover {
+    height: 110px;
+    width: 110px;
+    opacity: 0.8;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.mais a {
+    text-decoration: none;
+    color: black;
+}
+
+#seta {
+    position: relative;
+    top: 22px;
+}
+
+#tseta {
+    position: relative;
+    top: 10px;
+}
+
+/*responsividade da página principal*/
+@media (max-width:1250px) {
+
+    .produtos1 {
+        margin: 5px 10px;
+    }
+
+    .produtos2 {
+        margin: 0px 10px;
+    }
+
+    .produtos3 {
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 1091px) {
+    .produtos3 {
+        display: none;
+    }
+
+    .produtos1 {
+        margin: 0px 30px;
+    }
+
+    .produtos2 {
+        margin: 0px 60px;
+    }
+}
+
+@media (max-width: 912px) {
+    .produtos1 {
+        margin: 5px 10px;
+    }
+
+    .produtos2 {
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 773px) {
+    .produtos2 {
+        display: none;
+    }
+}
+
+@media (max-width: 773px) {
+    .mais {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .mais {
+        margin-left: 10px;
+    }
+}
+
+/*Designe do roda-pé do site*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(216, 216, 216);
+    position: relative;
+    left: -8px;
+    width: 101.2%;
+    height: 160px;
+    margin-top: 70px;
+    align-items: center;
+}
+
+/*Links de outras páginas*/
+.inf {
+    position: relative;
+    margin-left: 17%;
+    top: 10px;
+}
+
+.inf div {
+    margin-bottom: 20px;
+}
+
+.inf div:hover {
+    margin-bottom: 19px;
+    margin-top: -1px;
+}
+
+.inf a {
+    text-decoration: none;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+.inf div a:hover {
+    color: black;
+    font-size: 17px;
+}
+
+/*Logo do roda-pé*/
+.logo {
+    position: relative;
+    margin-left: 20%;
+}
+
+/*Direitos autorais*/
+.direitos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    position: relative;
+    color: rgb(65, 65, 65);
+    text-align: center;
+    left: -10%;
+}
+
+/*Algumas formas de contato*/
+.cont {
+    position: relative;
+    margin-left: 15%;
+    top: 10px;
+}
+
+.cont div {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.cont div a {
+    position: relative;
+    top: 5px;
+    left: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: blue;
+}
+
+/*Responsividade do roda-pé*/
+@media (max-width: 1050px) {
+    .inf {
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 860px) {
+    .cont {
+        margin-left: 8%;
+    }
+
+    .logo {
+        margin-left: 14%;
+    }
+}
+
+@media (max-width: 700px) {
+    .cont {
+        display: none;
+    }
+
+    .inf {
+        margin-left: 17%;
+    }
+
+    .logo {
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 590px) {
+    .inf {
+        margin-left: 7%;
+    }
+
+    .logo {
+        margin-left: 16%;
+    }
+}
+
+/*Página de produtos*/
+
+.corpo {
+    display: flex;
+}
+
+/*Designe da parte dos filtros*/
+.filtro {
+    background-color: rgb(192, 192, 192);
+    width: 35%;
+    height: fit-content;
+    margin-top: 30px;
+    margin-left: 1%;
+    padding: 0px 10px 30px 25px;
+    position: sticky;
+    top: 15px;
+    text-wrap: nowrap;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filtro h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.tefiltro {
+    font-size: 10px;
+}
+
+.filtro label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.filtro input {
+    margin-top: 5px;
+}
+
+/*Área onde apresenta todos os produtos*/
+.catalogo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/*Formato de cada produto*/
+.produto1 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+
+}
+
+.produto2 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produto3 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produto4 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produto5 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produto6 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produto7 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produto8 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.produto9 {
+    background: white;
+    height: 540px;
+    width: 300px;
+    margin: 0px 20px 35px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+/*Sobre Nós*/
+
+.sobre {
+    position: relative;
+    left: 20%;
+    background-color: white;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    margin-top: 45px;
+}
+
+.sobre p {
+    font-size: 20px;
+    margin: 20px;
+
+}
+
+.sobre ul {
+    font-size: 20px;
+}
+
+.sobre ul li {
+    padding: 7px;
+}
+
+.sobre h1 {
+    font-size: 30px;
+    position: relative;
+    left: 40px;
+}
+
+.sobre h2 {
+    position: relative;
+    left: 25px;
+    margin-top: 80px;
+}
+
+/*Responsividade da página Sobre Nós*/
+@media(max-width:900px) {
+    .sobre {
+        left: 5%;
+        width: 85%;
+    }
+
+}
+
+/*Página de Contatos*/
+.pcontatos {
+    position: relative;
+    left: 35%;
+    background-color: white;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    margin-top: 45px;
+    padding-left: 3%;
+    padding-bottom: 40px;
+}
+
+.pcontatos h1 {
+    margin-left: 26%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pcontatos h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 4%;
+}
+
+.pcontatos a {
+    color: black;
+    margin-left: 4%;
+}
+
+/*Responsividade da página de contatos*/
+@media (max-width: 700px) {
+    .pcontatos {
+        left: 17%;
+    }
+}
+
+
+/*Página de produtos*/
+.pprodutos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    top: -6px;
+    left: -6px;
+    width: 101.08%;
+}
+
+/*Foto expandida*/
+.foto {
+    position: relative;
+    margin: 2% 8% 0% 6%;
+    width: 79vh;
+}
+
+.imagem {
+    margin: 2% 4% 0% 6%;
+    width: 79vh;
+}
+
+/*Design da opção de passar as fotos*/
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #808080;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #808080;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next:hover {
+    color: rgb(0, 0, 0);
+}
+
+.prev:hover {
+    color: rgb(0, 0, 0);
+}
+
+/*Todos os dados sobre o produto*/
+.informacoes {
+    width: 40%;
+}
+
+/*Título*/
+.pprodutos h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+    left: 4%;
+    width: fit-content;
+}
+
+/*Mini decrição*/
+.descricao-curta {
+    position: relative;
+    top: 5%;
+    left: 4%;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pprodutos h2 {
+    position: relative;
+    top: 30px;
+    left: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+}
+
+/*Opção de escolher a cor*/
+.cores {
+    display: flex;
+    position: relative;
+    top: 30px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.bcor input {
+    visibility: hidden;
+}
+
+.bcor label {
+    display: inline-block;
+}
+
+.bcor input:checked+label {
+    opacity: 0.7;
+}
+
+/*Opção de escolher o tamanho*/
+.tamanhos {
+    display: flex;
+    position: relative;
+    top: 15px;
+    width: fit-content;
+}
+
+
+.btamanho input {
+    visibility: hidden;
+}
+
+.btamanho label {
+    position: relative;
+    top: 20px;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 5px;
+    padding: 6px 13px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.btamanho input:checked+label {
+    background-color: rgb(201, 201, 201);
+}
+
+/*Opção de escolher a quantidade*/
+.quant {
+    position: relative;
+    left: 22%;
+    top: -25px;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quant input {
+    width: 45px;
+    position: relative;
+    left: 10px;
+    font-size: 16px;
+    background-color: rgb(248, 247, 247);
+}
+
+.quant label {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/*Designe do preço*/
+.ppreco {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    color: black;
+    position: relative;
+    top: 45px;
+    left: 25px;
+    border: 1px solid rgb(223, 223, 223);
+    width: 28%;
+    text-align: center;
+}
+
+/*Botão de comprar*/
+.comprar {
+    position: relative;
+    top: 70px;
+    left: -2%;
+    text-align: center;
+}
+
+.comprar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    background-color: #16a085;
+    width: 50%;
+    padding: 14px 70px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+}
+
+/*Descrição principal*/
+.descricao {
+    margin-top: 4%;
+    width: 98%;
+    border-top: 2px solid #808080;
+}
+
+.tdes {
+    margin-top: 14px;
+    position: relative;
+    top: -3%;
+    left: 5%;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.descricao h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    position: relative;
+    padding-left: 5%;
+}
+
+.descricao p {
+    position: relative;
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Responsividade da página de cada produto*/
+@media (max-width:1155px) {
+    .foto {
+        margin: 2% 3% 2% 2%;
+        width: 450px;
+    }
+
+    .imagem {
+        margin-left: 6%;
+        width: 100%;
+    }
+
+    .descricao {
+        position: relative;
+        top: 90px;
+    }
+
+    .quant {
+        left: 10%;
+    }
+}
+
+@media (max-width:845px) {
+    .foto {
+        margin: 2% 3% 0% 22%;
+        width: 450px;
+    }
+
+    .imagem {
+        margin-left: 6%;
+        width: 100%;
+    }
+
+    .informacoes {
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:660px) {
+    .foto {
+        margin: 2% 3% 0% 5%;
+    }
+}
+
+@media(max-width:530px) {
+    .foto {
+        margin: 2% 3% 0% 0%;
+    }
+}
+
+/*Página dos dados de entrega*/
+.pag-entrega {
+    position: relative;
+    left: 25%;
+    background-color: white;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-top: 30px;
+    height: 850px;
+}
+
+.pag-entrega h1 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-left: 24%;
+}
+
+.pag-entrega form {
+    margin-left: 20%;
+}
+
+.pag-entrega input {
+    font-size: 15px;
+    width: 70%;
+    color: rgb(58, 58, 58);
+}
+
+/*Botão para finalizar a compra*/
+.finalizar {
+    position: relative;
+    top: 30px;
+    left: -2%;
+    text-align: center;
+}
+
+.finalizar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    background-color: #16a085;
+    width: 10%;
+    padding: 14px 10px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+}
+
+/*Responsividade da página de entrega*/
+@media (max-width: 1000px) {
+    .pag-entrega {
+        width: 70%;
+        left: 15%;
+    }
+}
